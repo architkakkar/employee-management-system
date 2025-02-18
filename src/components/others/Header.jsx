@@ -4,7 +4,7 @@ const Header = () => {
       <h1 className="text-md">
         Hello <br /> <span className="text-3xl font-medium">Archit 👋</span>
       </h1>
-      <button className="bg-yellow-400 text-black px-6 py-2 rounded-md hover:opacity-90">
+      <button className="bg-yellow-400 text-black font-medium px-6 py-2 rounded-md hover:opacity-90">
         Logout
       </button>
     </div>
