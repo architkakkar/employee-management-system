@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "email": "employee1@example.com",
+    "password": "12345678",
+    "tasks": [
+      {
+        "title": "Bug Fix in Authentication",
+        "description": "Resolve the issue with user login timeout",
+        "date": "19/02/2025",
+        "assignedTo": "employee1@example.com",
+        "category": "Development",
+        "active": true,
+        "new": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "Update Documentation",
+        "description": "Improve API documentation for authentication module",
+        "date": "15/02/2025",
+        "assignedTo": "employee1@example.com",
+        "category": "Documentation",
+        "active": false,
+        "new": true,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "email": "employee2@example.com",
+    "password": "12345678",
+    "tasks": [
+      {
+        "title": "Refactor Payment Gateway Code",
+        "description": "Optimize transaction handling and improve logging",
+        "date": "20/02/2025",
+        "assignedTo": "employee2@example.com",
+        "category": "Backend",
+        "active": true,
+        "new": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "UI Enhancement for Dashboard",
+        "description": "Revamp the user dashboard with better UX",
+        "date": "10/02/2025",
+        "assignedTo": "employee2@example.com",
+        "category": "Frontend",
+        "active": false,
+        "new": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "title": "Implement Dark Mode",
+        "description": "Add dark mode support to the user interface",
+        "date": "22/02/2025",
+        "assignedTo": "employee2@example.com",
+        "category": "Frontend",
+        "active": false,
+        "new": true,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "email": "employee3@example.com",
+    "password": "12345678",
+    "tasks": [
+      {
+        "title": "Security Patch Update",
+        "description": "Apply latest security fixes to server",
+        "date": "18/02/2025",
+        "assignedTo": "employee3@example.com",
+        "category": "Security",
+        "active": true,
+        "new": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "Deploy New Version",
+        "description": "Release v2.1.0 to production",
+        "date": "14/02/2025",
+        "assignedTo": "employee3@example.com",
+        "category": "DevOps",
+        "active": false,
+        "new": false,
+        "completed": true,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "email": "employee4@example.com",
+    "password": "12345678",
+    "tasks": [
+      {
+        "title": "Customer Feedback Analysis",
+        "description": "Analyze feedback from recent product launch",
+        "date": "21/02/2025",
+        "assignedTo": "employee4@example.com",
+        "category": "Research",
+        "active": true,
+        "new": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "Marketing Campaign Review",
+        "description": "Assess the performance of the latest ad campaign",
+        "date": "13/02/2025",
+        "assignedTo": "employee4@example.com",
+        "category": "Marketing",
+        "active": false,
+        "new": false,
+        "completed": false,
+        "failed": true
+      },
+      {
+        "title": "Prepare Quarterly Report",
+        "description": "Compile and summarize company performance for Q1",
+        "date": "25/02/2025",
+        "assignedTo": "employee4@example.com",
+        "category": "Business",
+        "active": false,
+        "new": true,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "email": "employee5@example.com",
+    "password": "12345678",
+    "tasks": [
+      {
+        "title": "Database Performance Tuning",
+        "description": "Optimize queries for faster data retrieval",
+        "date": "17/02/2025",
+        "assignedTo": "employee5@example.com",
+        "category": "Database",
+        "active": true,
+        "new": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "Migrate System Logs",
+        "description": "Move logs from local to centralized system",
+        "date": "12/02/2025",
+        "assignedTo": "employee5@example.com",
+        "category": "Infrastructure",
+        "active": false,
+        "new": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "title": "Implement Caching Strategy",
+        "description": "Improve performance by caching frequently accessed data",
+        "date": "26/02/2025",
+        "assignedTo": "employee5@example.com",
+        "category": "Backend",
+        "active": false,
+        "new": true,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  }
+]
