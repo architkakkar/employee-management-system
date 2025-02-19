@@ -1,14 +1,13 @@
 import { useState } from "react";
 
-const Login = () => {
+const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    console.log("email is:", email);
-    console.log("password is:", password);
+    handleLogin(email, password);
 
     setEmail("");
     setPassword("");
@@ -49,9 +48,13 @@ const Login = () => {
               id="password"
             />
           </div>
-          <p className="hover:underline cursor-pointer self-center text-sm underline-offset-4">
+          <button
+            type="button"
+            className="hover:underline cursor-pointer self-center text-sm underline-offset-4"
+            onClick={() => alert("Sorry! This feature is Work in Progress")}
+          >
             Forget Password?
-          </p>
+          </button>
           <button
             type="submit"
             className="py-2 px-3 rounded-md bg-yellow-400 text-black w-full hover:opacity-90 font-medium"
@@ -61,9 +64,13 @@ const Login = () => {
         </form>
         <p className="text-sm self-center">
           Don&apos;t have an account?{" "}
-          <span className="underline underline-offset-4 cursor-pointer hover:opacity-90">
+          <button
+            type="button"
+            className="underline underline-offset-4 cursor-pointer hover:opacity-90"
+            onClick={() => alert("Sorry! This feature is Work in Progress")}
+          >
             Sign up
-          </span>
+          </button>
         </p>
       </div>
     </div>
