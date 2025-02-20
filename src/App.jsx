@@ -3,10 +3,12 @@ import Login from "./components/Auth/Login";
 import EmployeeDashboard from "./components/dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/dashboard/AdminDashboard";
 import AuthContext from "./context/AuthContext";
+// import { setLocalStorage } from "./utils/localStorage";
 
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const { employeeData, adminData } = useContext(AuthContext);
+  const [loading, setLoading] = useState(true);
 
   const handleLogin = (email, password) => {
     if (!adminData && !employeeData) {
@@ -25,13 +27,13 @@ const App = () => {
       setLoggedInUser({ role: "admin", admin });
       localStorage.setItem(
         "loggedInUser",
-        JSON.stringify({ role: "admin", email })
+        JSON.stringify({ role: "admin", admin })
       );
     } else if (employee) {
       setLoggedInUser({ role: "employee", employee });
       localStorage.setItem(
         "loggedInUser",
-        JSON.stringify({ role: "employee", email })
+        JSON.stringify({ role: "employee", employee })
       );
     } else {
       alert("Invalid Credentials!");
@@ -39,18 +41,37 @@ const App = () => {
   };
 
   useEffect(() => {
+    // setLocalStorage();
     const userData = JSON.parse(localStorage.getItem("loggedInUser"));
 
     if (userData) {
       setLoggedInUser(userData);
     }
+
+    setLoading(false);
   }, []);
+
+  if (loading) {
+    return (
+      <div className="bg-zinc-950 text-white min-h-screen min-w-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <div className="bg-zinc-950 text-white h-full w-screen">
       {!loggedInUser ? <Login handleLogin={handleLogin} /> : <></>}
-      {loggedInUser?.role === "admin" ? <AdminDashboard /> : <></>}
-      {loggedInUser?.role === "employee" ? <EmployeeDashboard /> : <></>}
+      {loggedInUser?.role === "admin" ? (
+        <AdminDashboard data={loggedInUser?.admin} />
+      ) : (
+        <></>
+      )}
+      {loggedInUser?.role === "employee" ? (
+        <EmployeeDashboard data={loggedInUser?.employee} />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
