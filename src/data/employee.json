@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "name": "Employee 1",
     "email": "employee1@example.com",
     "password": "12345678",
     "tasks": [
@@ -10,8 +11,8 @@
         "date": "19/02/2025",
         "assignedTo": "employee1@example.com",
         "category": "Development",
-        "active": true,
         "new": false,
+        "active": true,
         "completed": false,
         "failed": false
       },
@@ -21,15 +22,22 @@
         "date": "15/02/2025",
         "assignedTo": "employee1@example.com",
         "category": "Documentation",
-        "active": false,
         "new": true,
-        "completed": false,
+        "active": false,
+        "completed": true,
         "failed": false
       }
-    ]
+    ],
+    "taskCount": {
+      "new": 1,
+      "active": 1,
+      "completed": 1,
+      "failed": 0
+    }
   },
   {
     "id": 2,
+    "name": "Employee 2",
     "email": "employee2@example.com",
     "password": "12345678",
     "tasks": [
@@ -39,8 +47,8 @@
         "date": "20/02/2025",
         "assignedTo": "employee2@example.com",
         "category": "Backend",
-        "active": true,
         "new": false,
+        "active": true,
         "completed": false,
         "failed": false
       },
@@ -50,8 +58,8 @@
         "date": "10/02/2025",
         "assignedTo": "employee2@example.com",
         "category": "Frontend",
-        "active": false,
         "new": false,
+        "active": false,
         "completed": true,
         "failed": false
       },
@@ -61,15 +69,22 @@
         "date": "22/02/2025",
         "assignedTo": "employee2@example.com",
         "category": "Frontend",
-        "active": false,
         "new": true,
+        "active": true,
         "completed": false,
         "failed": false
       }
-    ]
+    ],
+    "taskCount": {
+      "new": 1,
+      "active": 2,
+      "completed": 1,
+      "failed": 0
+    }
   },
   {
     "id": 3,
+    "name": "Employee 3",
     "email": "employee3@example.com",
     "password": "12345678",
     "tasks": [
@@ -79,8 +94,8 @@
         "date": "18/02/2025",
         "assignedTo": "employee3@example.com",
         "category": "Security",
-        "active": true,
         "new": true,
+        "active": true,
         "completed": false,
         "failed": false
       },
@@ -90,15 +105,22 @@
         "date": "14/02/2025",
         "assignedTo": "employee3@example.com",
         "category": "DevOps",
-        "active": false,
         "new": false,
-        "completed": true,
-        "failed": false
+        "active": false,
+        "completed": false,
+        "failed": true
       }
-    ]
+    ],
+    "taskCount": {
+      "new": 1,
+      "active": 1,
+      "completed": 0,
+      "failed": 1
+    }
   },
   {
     "id": 4,
+    "name": "Employee 4",
     "email": "employee4@example.com",
     "password": "12345678",
     "tasks": [
@@ -108,8 +130,8 @@
         "date": "21/02/2025",
         "assignedTo": "employee4@example.com",
         "category": "Research",
+        "new": true,
         "active": true,
-        "new": false,
         "completed": false,
         "failed": false
       },
@@ -119,8 +141,8 @@
         "date": "13/02/2025",
         "assignedTo": "employee4@example.com",
         "category": "Marketing",
-        "active": false,
         "new": false,
+        "active": false,
         "completed": false,
         "failed": true
       },
@@ -130,15 +152,22 @@
         "date": "25/02/2025",
         "assignedTo": "employee4@example.com",
         "category": "Business",
-        "active": false,
         "new": true,
-        "completed": false,
+        "active": false,
+        "completed": true,
         "failed": false
       }
-    ]
+    ],
+    "taskCount": {
+      "new": 2,
+      "active": 1,
+      "completed": 1,
+      "failed": 1
+    }
   },
   {
     "id": 5,
+    "name": "Employee 5",
     "email": "employee5@example.com",
     "password": "12345678",
     "tasks": [
@@ -148,8 +177,8 @@
         "date": "17/02/2025",
         "assignedTo": "employee5@example.com",
         "category": "Database",
-        "active": true,
         "new": false,
+        "active": true,
         "completed": false,
         "failed": false
       },
@@ -159,8 +188,8 @@
         "date": "12/02/2025",
         "assignedTo": "employee5@example.com",
         "category": "Infrastructure",
-        "active": false,
         "new": false,
+        "active": false,
         "completed": true,
         "failed": false
       },
@@ -170,11 +199,17 @@
         "date": "26/02/2025",
         "assignedTo": "employee5@example.com",
         "category": "Backend",
-        "active": false,
         "new": true,
-        "completed": false,
+        "active": false,
+        "completed": true,
         "failed": false
       }
-    ]
+    ],
+    "taskCount": {
+      "new": 1,
+      "active": 1,
+      "completed": 2,
+      "failed": 0
+    }
   }
 ]
