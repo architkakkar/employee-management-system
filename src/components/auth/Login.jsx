@@ -14,7 +14,7 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex min-h-screen w-screen items-center justify-center">
       <div className="border border-zinc-600 p-6 rounded-lg flex flex-col gap-y-6 items-start min-w-80 md:min-w-96">
         <h1 className="text-2xl font-semibold">Log In</h1>
         <form
