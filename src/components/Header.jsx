@@ -1,7 +1,7 @@
-const Header = ({ name }) => {
+const Header = ({ name, setLoggedInUser }) => {
   const logoutUser = () => {
     localStorage.removeItem("loggedInUser");
-    window.location.reload();
+    setLoggedInUser(null);
   };
 
   return (

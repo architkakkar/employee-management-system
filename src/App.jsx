@@ -61,12 +61,18 @@ const App = () => {
     <div className="bg-zinc-950 text-white h-full w-screen">
       {!loggedInUser ? <Login handleLogin={handleLogin} /> : <></>}
       {loggedInUser?.role === "admin" ? (
-        <AdminDashboard data={loggedInUser?.admin} />
+        <AdminDashboard
+          setLoggedInUser={setLoggedInUser}
+          data={loggedInUser?.admin}
+        />
       ) : (
         <></>
       )}
       {loggedInUser?.role === "employee" ? (
-        <EmployeeDashboard data={loggedInUser?.employee} />
+        <EmployeeDashboard
+          setLoggedInUser={setLoggedInUser}
+          data={loggedInUser?.employee}
+        />
       ) : (
         <></>
       )}
