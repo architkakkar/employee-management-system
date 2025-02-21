@@ -1,6 +1,6 @@
-import AllTask from "../others/AllTask";
-// import CreateTask from "../others/CreateTask";
-import Header from "../others/Header";
+import AllTask from "../task/AllTask";
+// import CreateTask from "../task/CreateTask";
+import Header from "../Header";
 
 const AdminDashboard = ({ data }) => {
   return (

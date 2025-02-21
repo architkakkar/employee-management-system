@@ -1,4 +1,4 @@
-import TaskCard from "./TaskCard";
+import TaskCard from "../task/TaskCard";
 
 const TaskList = ({ tasks, setEmpData }) => {
   return (

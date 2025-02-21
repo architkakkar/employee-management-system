@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "../others/Header";
-import TaskListNumbers from "../others/TaskListNumbers";
-import TaskList from "../taskList/TaskList";
+import Header from "../Header";
+import TaskListNumbers from "../task/TaskListNumbers";
+import TaskList from "../task/TaskList";
 
 const EmployeeDashboard = ({ data }) => {
   const [empData, setEmpData] = useState(data);
